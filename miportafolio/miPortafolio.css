@@ -1,0 +1,228 @@
+/variables principales/
+:root{
+    :root {
+        --color-fondo:#040111;
+        --color-tarjetas: #b33a3a;
+        --color-texto-principal: #4C1D95;
+        --color-texto-secundario: #3aed3a;
+        --color-primario: #312E81;
+        --color-secundario: #C4B5FD;
+        --color-redondeado: #5B21B6;
+        --color-bordes: #DDD6FE;
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+    html{
+scroll-behavior: smooth;
+
+    }
+
+    body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--color-fondo);
+color: var(--color-texto);
+line-height: 1.7;
+padding: 20px;
+
+}
+
+hr{
+    display: none;
+}
+@media (min-width:992px){
+    body{
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 40px;
+        max-width: 1250px;
+        margin: 40px auto;
+        align-items: start;
+
+    }
+
+    header{
+        position: sticky;
+        top: 40px;
+    }
+}
+
+header{
+    background: linear-gradient(135deg #1e293b, #0f172a);
+    padding: 30px;
+    border-radius:var(--color-bordes);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03);
+
+}
+
+header h1{
+    font-size: 1.8rem;
+    color: var(--color-texto);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+header p{
+    font-size: 0.9rem;
+    color: var(--color-texto);
+    margin-bottom: 25px;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 600;
+    font-size: 0,95rem;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: var(--color-text-princioal);
+    display: block;
+    background-color: var(--color-tarjeta);
+    border: 1px solido transparent;
+    }
+nav a:hover{
+    color: var(--color-secundario);
+    background-color: var 
+    (--color-texto-secundario9;)
+    transform: translatex(8px);
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+selection{
+    background-color: var(--color-tarjetas);
+    padding: 40px;
+    border-radius: var(--color-redondeado);
+    border: 1px solid transparent;
+    box-shadow: 0 4px 20px rgbsa(0, 0, 0, 0.02);
+    scroll-margin-top: 40px;
+}
+section h2{
+    font-size: 1.6rem;
+    color: var(--color-secundario);
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(rgba(37, 216, 236, 0.584))
+    padding-bottom: 2px;
+}
+selection h3{
+    font-size: 1.15rem;
+    color: var(--color-primario);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+selection p{
+    color: var(--color-texto-secundario);
+    margin-bottom: 15px;
+    }
+    
+    selection p strong{
+        color: var(--color-principal);
+    }
+
+    img{
+        border-radius: 50%;
+        border: 2px solid var
+        (--color-texto-secundario);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin-botton: 25px;
+    }
+
+    img:hover{
+        transform: scale(1.1) rotate(6deg);
+        filter: brightness(1.1);
+        }
+ul,ol{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li{
+    color: var(--color-texto-secundario);
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+ol li::marker{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+#experiencia{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    background-color: #11182a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td{
+    padding: 12px 20px;
+    text-align: left;
+}
+
+th{
+    background-color: #161739;
+    color: var(--color-primario);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #242559;
+}
+
+td{
+    color: var(--color-texto-secundario);
+    border-bottom: 1px solid #0b0b19;
+}
+
+tbody tr:nth-child(even){
+    background-color: #2d2d7f;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    font-weight: 0.8rem;
+    font-weight: bold;
+    color: var(--color-texto-principal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }   
+
+ input[type="text"]
+ input[type="email"],
+    textarea{
+        width: 100%;
+        padding: 14px 18px;
+        background-color: var(--color-fondo);
+        border: radius: 8px;
+        border: 1px solid

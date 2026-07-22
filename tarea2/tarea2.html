@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados</title>
+</head>
+<body>
+
+<header>
+    <h1>Registro de empleados</h1>
+</header>
+
+<main class="contenedor">
+
+    <section class="card">
+        <h2>Formulario</h2>
+
+        <nav>
+
+            <ul class="grid-form">
+
+                <li class="campo">
+                    <label for="nombre"><strong>Nombre completo</strong></label>
+                    <input type="text" id="nombre" placeholder="Ingrese el nombre">
+                </li>
+
+                <li class="campo">
+                    <label for="correo"><strong>Correo electrónico</strong></label>
+                    <input type="email" id="correo" placeholder="email">
+                </li>
+
+                <li class="campo">
+                    <label for="telefono"><strong>Telefono</strong></label>
+                    <input type="tel" id="telefono" placeholder="tel">
+                </li>
+
+                <li class="campo">
+                    <label for="departamento"><strong>Ciudad</strong></label>
+                    <select id="departamento">
+                        <option>Seleccione...</option>
+                        <option>Bogota</option>
+                        <option>Cali</option>
+                        <option>Medellin</option>
+                        <option>Florencia</option>
+                        <option>Bucaramanga</option>
+                        <option>Cartagena</option>
+                        <option>Santa Marta</option>
+                        <option>Villavicencio</option>
+                        <option>Neiva</option>
+                        <option>Armenia</option>
+                        <option>Manizales</option>
+                    </select>
+                </li>
+
+                <li class="campo">
+                    <label for="cargo"><strong>Cargo</strong></label>
+                    <input type="text" id="cargo">
+                </li>
+
+                <li class="campo">
+                    <label for="salario"><strong>Salario mensual</strong></label>
+                    <input type="number" id="number"> 
+                </li>
+
+                <li class="campo">
+                    <label><strong>Tipo de jornada</strong></label>
+
+                    <label><input type="radio" name="jornada"> Presencial</label>
+                    <label><input type="radio" name="jornada"> Remoto</label>
+                    <label><input type="radio" name="jornada"> Híbrido</label>
+                </li>
+
+                <li class="campo">
+                    <label><strong>Modos de notificación</strong></label>
+
+                    <label><input type="checkbox"> Email</label>
+                    <label><input type="checkbox"> SMS</label>
+                </li>
+
+            </ul>
+
+            <div class="botones">
+                <button class="btn-primary" type="submit">
+                    Guardar Registro
+                </button>
+                <button class="btn-secondary" type="reset">
+                    Limpiar
+                </button>
+            </div>
+
+        </nav>
+<hr>
+    </section>
+
+    <section class="card">
+
+        <h2>Empleados Registrados</h2>
+
+        <div class="tabla-responsive">
+
+            <table border="2">  
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>cargo</th>
+                        <th>correo</th>
+                        <th>ciudad</th>
+                        <th>salario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Axel Mondul</td>
+                        <td>supervisor</td>
+                        <td>alc@gmail.com</td>
+                        <td>bogota</td>
+                        <td class="numero">$3.500.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>samuel Pérez</td>
+                        <td>Ventas</td>
+                        <td>sperez@email.com</td>
+                        <td>cali</td>
+                        <td class="numero">$2.800.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>María Castro</td>
+                        <td>Recursos Humanos</td>
+                        <td>marc@email.com</td>
+                        <td>medellin</td>
+                        <td class="numero">$3.200.000</td>
+                    </tr>
+                    <tr>
+                        <td>sonia benavodez</td>
+                        <td>limpieza</td>
+                        <td>plo@email.com</td>
+                        <td>cartagena</td>
+                        <td class="numero">$2.200.000</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sistema de Registro de Empleados</p>
+</footer>
+
+</body>
+</html>
